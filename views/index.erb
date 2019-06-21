@@ -1,1 +1,11 @@
-<%# Write your code here! %>
+<h1>Welcome!</h1>
+<form action="/greet" method="POST"> <!--when submitted, will create an HTTP POST request to /greet -->
+  <label for="user_name">Name:</label>
+
+  <p><input type="text" name="user_name" id="user_name" /></p> <!-- this is important for passing the second test, to have_field :user_id-->
+
+  <input type="submit" value="Submit"/>
+
+  <!-- The POST request will contain whatever the user typed into the form's <input> field,
+  which is nested within the form and has a name value of user_name -->
+</form>
